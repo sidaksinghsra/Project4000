@@ -48,9 +48,11 @@ main{
 }
 .search-input:focus{
   outline: none;
-  
-  
+  border: none;
+  border-bottom: 0.1em solid rgb(148, 148, 148);
+  border-radius: 0;
 }
+
 
 /* End of hover effect */
 .fa-search{
@@ -69,7 +71,7 @@ main{
 /* For Left Menu Bar Drop Down */
 
 .SettingButton:hover{
-    color: #739aed;
+    opacity: 0.6;
 
 }
   .AccountDrop {
@@ -112,7 +114,7 @@ main{
 /* For right hand side User Account Drop Down */
 
 .AccountButton:hover{
-    color: #739aed;
+  opacity: 0.6;
 }
   .user-profile-dropdown {
     float: left;
