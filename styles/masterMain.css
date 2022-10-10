@@ -51,6 +51,7 @@ main{
   border: none;
   border-bottom: 0.1em solid rgb(148, 148, 148);
   border-radius: 0;
+  
 }
 
 
@@ -239,6 +240,8 @@ main{
   font-size: 2em;
   font-family: 'Lobster', cursive;
   font-weight: normal;
+  color: black;
+
 }
 
 .thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
