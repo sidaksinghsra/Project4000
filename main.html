@@ -15,74 +15,82 @@
     </head>
     <body>
         <header>
-            <div id="header" class="header">
-                <nav class="AccountDrop">
-                    <button class="SettingButton" onclick="SettingHover1()"><i class="fa-solid fa-bars"></i></button>
-                    <div class="DropContent" id ="DropSettings">
-                        <a href="#"><i class="fas fa-th-large"></i>Dashboard</a>
-                        <a href="#"><i class= "far fa-chart-bar"></i>Analytics</a>
-                        <a href="#"><i class= "far fa-comment-dots"></i>Comments</a>
-                        <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
-                    </div>
-                    <i class="fa-solid fa-book-open-reader"></i>
-                </nav>
-                <div id="searchBar" class="searchBar"> 
-                    <div class="searchbox">
-                        <i class="fas fa-search icon"></i>
-                        <input type="search" class ="search-input" placeholder = "Search.." name="searchbox">
-                        
-                    </div>
-                </div>
-                <!-- User Profile Dropdown -->
-
-                <div class="user-profile-dropdown">
-                    <button class="AccountButton" onclick="SettingHover2()"><i class="fa-solid fa-circle-user"></i>&nbsp;<i class="fa fa-caret-down"></i></button>
-                    <div class="DropAccount" id ="DropAccount">
-                        <a href="Account.html">Accounts</a>
-                        <a href="Settings.html">Settings</a>
-                        <a href="Logout.html">Log Out</a>
-                    </div>
-                </div>
+            <div class="sidebar" id ="mySidebar">
+                <span class="closebtn" onclick="closeNav()">&times;</span>
+                <a href="#"><i class="fas fa-th-large"></i>Dashboard</a>
+                <a href="#"><i class= "far fa-chart-bar"></i>Analytics</a>
+                <a href="#"><i class= "far fa-comment-dots"></i>Comments</a>
+                <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
             </div>
         </header>
         <main>
-            <div id="greetingBox" class="greetingBox">
-                <p></p>
-                <h1> Happy Monday, Shreya! Here's your weekly Update</h1>
-                <p></p>
-            </div>
-            <div id="averageFigure" class="avgFigure">
-                <div id="thisMonth" class="thisMonth">
-                    <p> Total Revenue this Month</p>
-                    <p id="thisMonthRevenue" class="thisMonthRevenue">$75,000</p>
+            <div id="main">
+                <div id="nav-head" class="nav-head">
+                    <nav class="AccountDrop">
+                        <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+                        <span>
+                            <i class="fa-solid fa-book-open-reader"></i>   
+                        </span>
+                        <span class="search-box">
+                            <i class="fas fa-search icon"></i>
+                            <input type="search" class ="search-input" placeholder = "Search.." name="searchbox">
+                        </span>
+                        
+                    </nav> 
+                    <!-- User Profile Dropdown -->
+                    <div id = "user-profile-dropdown" class="user-profile-dropdown">
+                        <button class="AccountButton" onclick="SettingHover2()">
+                            <i class="fa-solid fa-circle-user"></i>&nbsp;<i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="DropAccount" id ="DropAccount">
+                            <a href="Account.html">Accounts</a>
+                            <a href="Settings.html">Settings</a>
+                            <a href="Logout.html">Log Out</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="prevMonth" class="prevMonth">
-                    <p> Total Revenue Previous Month</p>
-                    <p id="prevMonthRevenue" class="prevMonthRevenue">$70,000</p>
-                </div>
-                <div id="lastYear" class="lastYear">
-                    <p> Total Revenue This Month Last Year</p>
-                    <p id="lastYearRevenue" class="lastYearRevenue">$70,000</p>
+
+                <!-- Main Page Contents -->
+                <div id = "main-content">
+                    <div id="greetingBox" class="greetingBox">
+                        <p></p>
+                        <h1> Happy Monday, Shreya! Here's your weekly Update</h1>
+                        <p></p>
+                    </div>
+                    <div id="averageFigure" class="avgFigure">
+                        <div id="thisMonth" class="thisMonth">
+                            <p> Total Revenue this Month</p>
+                            <p id="thisMonthRevenue" class="thisMonthRevenue">$75,000</p>
+                        </div>
+                        <div id="prevMonth" class="prevMonth">
+                            <p> Total Revenue Previous Month</p>
+                            <p id="prevMonthRevenue" class="prevMonthRevenue">$70,000</p>
+                        </div>
+                        <div id="lastYear" class="lastYear">
+                            <p> Total Revenue This Month Last Year</p>
+                            <p id="lastYearRevenue" class="lastYearRevenue">$70,000</p>
+                        </div>
+                    </div>
+                    <div id="exclaimBox" class="exclaimBox">
+                        <p> Your doctors look like they are having a good month</p>
+                    </div>
+                    <div id="thisMonthChart" class="thisMonthChart">
+                        <img src="images/graph-chart.png" alt="This Month's Revenue in Chart" >
+                    </div>
+                    <div id="oldChart" class="oldChart">
+                        <div id="prevChart" class="prevChart">
+                            <img src="images/graph-chart.png" alt="Previous Month's Revenue in Chart" >
+                        </div>
+                        <div id="lastYearChart" class="lastYearChart">
+                            <img src="images/graph-chart.png" alt="Last Year's this Month's Revenue in Chart">
+                        </div>
+                    </div>
+                    <div id="tabularData" class="tabularData">
+                        <p>Production Summary</p>
+                        <img src="images/tabularData.png" alt="Revenue in Tabular Format">
+                    </div>
                 </div>
             </div>
-            <div id="exclaimBox" class="exclaimBox">
-                <p> Your doctors look like they are having a good month</p>
-            </div>
-            <div id="thisMonthChart" class="thisMonthChart">
-                <img src="images/graph-chart.png" alt="This Month's Revenue in Chart">
-            </div>
-            <div id="oldChart" class="oldChart">
-                <div id="prevChart" class="prevChart">
-                    <img src="images/graph-chart.png" alt="Previous Month's Revenue in Chart">
-                </div>
-                <div id="lastYearChart" class="lastYearChart">
-                    <img src="images/graph-chart.png" alt="Last Year's this Month's Revenue in Chart">
-                </div>
-            </div>
-             <div id="tabularData" class="tabularData">
-                <p>Production Summary</p>
-                <img src="images/tabularData.png" alt="Revenue in Tabular Format">
-             </div>
         </main>
         <footer>
 

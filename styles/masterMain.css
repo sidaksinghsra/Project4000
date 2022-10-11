@@ -1,11 +1,381 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap');
-body{
-    min-height: 100vh;	
-    margin: 0;
+
+@media screen and (min-width: 1024px){
+
+  body{
+      min-height: 100vh;	
+      margin: 0;
+  }
+
+  #nav-head{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: white;
+      background-color: white;
+      position: fixed;
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -20px;
+      vertical-align: baseline;
+      padding: 0.3em;
+    }
+
+  #main-content{
+      transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+      padding: 2em;
+
+  }
+  #nav-head{
+    transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+  
+  }
+
+  .fa-book-open-reader{
+      font-size: 1.5em;
+      color: black;
+  }
+  /* For search bar */
+
+  .search-input{
+      border-radius: 0.1em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      width: 300px;
+      text-indent:25px;
+      border: 0.01em solid rgb(148, 148, 148);
+      border-radius: 1em;
+      font-size: 0.9em;
+  }
+  .search-input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 0.1em solid rgb(148, 148, 148);
+    border-radius: 0;
+    background-color: white;
+  }
+
+
+  /* End of hover effect */
+  .fa-search{
+    position: relative;
+    left: 28px;
+    top:1px;
+    color:#17171e;
+
+  }
+
+  /* end of search bar */
+
+
+
+
+  /* For Left Menu Bar Drop Down */
+
+  .sidebar {
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #17171e;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+
+  .sidebar a {
+    padding: 25px 8px 8px 25px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #bababa;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .closebtn{
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #bababa;
+    padding: 8px 0px;
+    border: none;
+  }
+
+  .closebtn:hover{
+    color: white;
+  }
+  .openbtn {
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    opacity: 0.6;
+  }
+
+  .fa-th-large, .fa-gear, .fa-comment-dots, .fa-chart-bar{
+    margin-right: 0.5em;
+  }
+  /* END OF SideNav  */
+
+  /* For right hand side User Account Drop Down */
+
+  .AccountButton:hover{
+    opacity: 0.6;
+  }
+    .user-profile-dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+ .AccountButton {
+      cursor: pointer;
+      font-size: 1.3em;  
+      border: none;
+      text-decoration: none;
+      padding: 0.5em;
+      background-color: white;
+      padding: 10px 15px;
+      font-size: 1.5em;
+    }
+
+    
+  .DropAccount {
+      display: none;
+      z-index: 1;
+      right: 1px;
+      position: absolute;
+      min-width: 100px;
+      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+  .DropAccount a {
+      color: black;
+      padding: 1em;
+      text-decoration: none;
+      display: block;
+      background-color: aliceblue;
+      position: relative;
+    }
+
+    .DropAccount a:hover, .DropContent a:hover {
+      color: white;
+      background-color: rgb(4, 59, 106);
+
+    }
+    .show {
+      display: block;
+    }
+
+    .showSetting {
+      display: block;
+    }
+
+  /* END OF USER DROP DOWN  */
+
+
+
+  /* Grettings */
+  .greetingBox{
+      display: flex;
+      justify-content: center;
+      padding: 0 10px; 
+      margin-top: 2em;
+    }
+    
+    .greetingBox h1{
+      text-transform: uppercase;
+      background-image: linear-gradient(-225deg, #231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      animation: textclip 15s linear infinite;
+      display: inline-block;
+      animation-iteration-count: 1
+      
+    }
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+    
+
+  .avgFigure{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 3em;
+      border-radius: 0.3em;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      padding-top: 2em;
+      padding-bottom: 2em;
+  }
+
+
+  .thisMonth,.prevMonth, .lastYear {
+      border: 0.1em solid black;
+      padding: 1em;
+      border: none;
+      border-radius: 1em;
+      width: 280px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+      cursor:default;
+      
+  }
+  .thisMonth:hover {
+    transform: scale(1.1); 
+  }
+  .thisMonth { transition: all .2s ease-in-out; }
+
+  .prevMonth:hover {
+    transform: scale(1.1); 
+  }
+  .prevMonth { transition: all .2s ease-in-out; }
+
+  .lastYear:hover {
+    transform: scale(1.1); 
+  }
+  .lastYear { transition: all .2s ease-in-out; }
+
+  .thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    color: black;
+
+  }
+
+  .thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
+    text-transform: uppercase;
+  }
+
+
+
+  .thisMonth{
+    background-image: linear-gradient(#eecda3, #f086e0 );
+  }
+  .prevMonth{
+    background-image: linear-gradient(#e2f3d6 , #b3f795 );
+  }
+  .lastYear{
+    background-image: linear-gradient(#8cdde3, #739aed );
+  }
+
+
+
+  .thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue {
+      text-align: center;
+  }
+
+  .exclaimBox{
+      margin-top: 1.5em;
+      display: flex;
+      justify-content: center;
+      padding: 0 10px;
+      border: 0.1em solid black;
+    
+      border: none;
+      margin-left: 300px;
+      margin-right: 300px;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      border-radius: 0.5em;
+    
+      
+    }
+
+  .thisMonthChart{
+      margin-top: 3em;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+      
+  }
+
+
+  .oldChart{
+      margin-top: 1.5em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+
+  }
+
+  .tabularData{
+    margin-top: 1.5em;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+  }
+
+  .tabularData p{
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+  }
+
+
+  /* Chart Images Size */
+  .thisMonthChart img{
+    width: 700px;
+    height: 500px;
+  }
+
+  .oldChart img{
+    width: 640px;
+    height: 440px;
+  }
+
+  .tabularData img{
+    width: 700px;
+    height: 450px;
+    border: 0.1em solid black;
+  }
+
+  /* chart Image Size done */
 }
 
-#header{
+
+
+
+
+
+
+/* For Mobile Version */
+@media screen and (max-width:768px){
+	body{
+		min-height: 100vh;
+	}
+
+  #nav-head{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,103 +384,120 @@ body{
     position: fixed;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -20px;
-}
+    vertical-align: baseline;
+    top:0;
+  }
 
-main{
+#main-content{
+    transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
     padding: 2em;
-    color: rgb(73, 73, 73);
+
+}
+#nav-head{
+  transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+
 }
 
 .fa-book-open-reader{
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: black;
 }
-
 /* For search bar */
-.searchbox{
-    padding: 0.5em;
-    margin-top: 1px;
-    
-    
-   
-}
+
 .search-input{
     border-radius: 0.1em;
-    padding: 0.5em;
-    width: 250px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100px;
     text-indent:25px;
-    border: 0.01em solid rgb(230, 230, 230);
-    border-radius: 0.3em;
-
-    
-    
-    
+    border: 0.01em solid rgb(148, 148, 148);
+    border-radius: 1em;
+    font-size: 0.9em;
 }
 .search-input:focus{
   outline: none;
   border: none;
   border-bottom: 0.1em solid rgb(148, 148, 148);
   border-radius: 0;
-  
+  background-color: white;
 }
 
 
 /* End of hover effect */
 .fa-search{
-   position: relative;
-   left: 28px;
-   top:1.5px;
-   color:#739aed;
+  position: relative;
+  left: 28px;
+  top:1px;
+  color:#17171e;
 
 }
 
 /* end of search bar */
 
-
-
-
 /* For Left Menu Bar Drop Down */
 
-.SettingButton:hover{
-    opacity: 0.6;
 
+.sidebar {
+  height: 100%; 
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #17171e;
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
 }
-  .AccountDrop {
-    float: left;
-    overflow: hidden;
-  }
 
-  .AccountDrop .SettingButton {
-    cursor: pointer;
-    font-size: 1.3em;  
-    border: none;
-    text-decoration: none;
-    padding: 0.5em;
-    background-color: white;
-  }
+.sidebar a {
+  padding: 10px 2px 8px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #bababa;
+  display: block;
+  transition: 0.3s;
+}
 
-  
-.DropContent {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    min-width: 150px;
-    background-color: aliceblue;
-    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-  }
-  .DropContent a {
-    color: black;
-    padding: 1em;
-    text-decoration: none;
-    display: block;
-  }
- 
+.sidebar a:hover {
+  color: #f1f1f1;
+}
 
-  .fa-th-large, .fa-chart-bar, .fa-comment-dots, .fa-gear{
-    margin-right: 0.5em;
-  }
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.closebtn{
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #bababa;
+  padding: 8px 0px;
+  border: none;
+}
 
-/* END OF USER DROP DOWN  */
+.closebtn:hover{
+  color: white;
+}
+.openbtn {
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  opacity: 0.6;
+}
+
+.fa-th-large, .fa-gear, .fa-comment-dots, .fa-chart-bar{
+  margin-right: 0.5em;
+}
+/* END OF SideNav  */
 
 /* For right hand side User Account Drop Down */
 
@@ -124,11 +511,12 @@ main{
 
   .user-profile-dropdown .AccountButton {
     cursor: pointer;
-    font-size: 1.3em;  
+    font-size: 1.4em;  
     border: none;
     text-decoration: none;
     padding: 0.5em;
     background-color: white;
+    margin-right: 0.5em;
   }
 
   
@@ -176,6 +564,7 @@ main{
   
   .greetingBox h1{
     text-transform: uppercase;
+    font-size: 1.5em;
     background-image: linear-gradient(-225deg, #231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
     background-size: auto auto;
     background-clip: border-box;
@@ -184,8 +573,383 @@ main{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    animation: textclip 9s linear infinite;
+    animation: textclip 15s linear infinite;
     display: inline-block;
+    animation-iteration-count: 1
+    
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+
+.avgFigure{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    border-radius: 0.3em;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    align-items:center;
+}
+
+
+.thisMonth,.prevMonth, .lastYear {
+    border: 0.1em solid black;
+    padding: 1em;
+    
+    margin-top: 1em;
+  
+    border: none;
+    border-radius: 1em;
+    width: 150px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    cursor:default;
+    
+}
+.thisMonth:hover {
+  transform: scale(1.1); 
+}
+.thisMonth { transition: all .2s ease-in-out; }
+
+.prevMonth:hover {
+  transform: scale(1.1); 
+}
+.prevMonth { transition: all .2s ease-in-out; }
+
+.lastYear:hover {
+  transform: scale(1.1); 
+}
+.lastYear { transition: all .2s ease-in-out; }
+
+.thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
+  font-size: 1em;
+  font-family: 'Lobster', cursive;
+  font-weight: normal;
+  color: black;
+
+}
+
+.thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
+  text-transform: uppercase;
+}
+
+
+
+.thisMonth{
+  background-image: linear-gradient(#eecda3, #f086e0 );
+}
+.prevMonth{
+  background-image: linear-gradient(#e2f3d6 , #b3f795 );
+}
+.lastYear{
+  background-image: linear-gradient(#8cdde3, #739aed );
+}
+
+
+
+.thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue {
+    text-align: center;
+}
+
+.exclaimBox{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+
+.thisMonthChart{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+
+.oldChart{
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prevChart{
+    margin-bottom: 1.5em;
+}
+
+.tabularData{
+  margin-top: 1.5em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.tabularData p{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+
+/* Chart Images Size */
+.thisMonthChart img{
+  width: 320px;
+  height: 200px;
+}
+
+.oldChart img{
+  width: 320px;
+  height: 200px;
+}
+
+.tabularData img{
+  width: 300px;
+  height: 200px;
+  border: 0.1em solid black;
+}
+
+/* chart Image Size done */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------
+--------------------------------------
+--------------------------------------
+-------------------------------------- */
+
+
+/* For Tablets Version or Landscape */
+@media screen and (min-width:768px) and (max-width:1024px) {
+	body{
+		min-height: 100vh;
+	}
+
+  #nav-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -20px;
+    vertical-align: baseline;
+    padding: 0.3em;
+    top:0;
+  }
+
+#main-content{
+    transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+    padding: 2em;
+
+}
+#nav-head{
+  transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+
+}
+
+.fa-book-open-reader{
+    font-size: 1.5em;
+    color: black;
+}
+/* For search bar */
+
+.search-input{
+    border-radius: 0.1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 300px;
+    text-indent:25px;
+    border: 0.01em solid rgb(148, 148, 148);
+    border-radius: 1em;
+    font-size: 0.9em;
+}
+.search-input:focus{
+  outline: none;
+  border: none;
+  border-bottom: 0.1em solid rgb(148, 148, 148);
+  border-radius: 0;
+  background-color: white;
+}
+
+
+/* End of hover effect */
+.fa-search{
+  position: relative;
+  left: 28px;
+  top:1px;
+  color:#17171e;
+
+}
+
+/* end of search bar */
+
+
+
+
+/* For Left Menu Bar Drop Down */
+
+.sidebar {
+  height: 100%; 
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #17171e;
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidebar a {
+  padding: 25px 8px 8px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #bababa;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.closebtn{
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #bababa;
+  padding: 8px 0px;
+  border: none;
+}
+
+.closebtn:hover{
+  color: white;
+}
+.openbtn {
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  opacity: 0.6;
+}
+
+.fa-th-large, .fa-gear, .fa-comment-dots, .fa-chart-bar{
+  margin-right: 0.5em;
+}
+/* END OF SideNav  */
+
+/* For right hand side User Account Drop Down */
+
+.AccountButton:hover{
+  opacity: 0.6;
+}
+  .user-profile-dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .user-profile-dropdown .AccountButton {
+    cursor: pointer;
+    font-size: 1.3em;  
+    border: none;
+    text-decoration: none;
+    padding: 0.5em;
+    background-color: white;
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+
+  
+.DropAccount {
+    display: none;
+    z-index: 1;
+    right: 1px;
+    position: absolute;
+    min-width: 100px;
+    margin-right: 250px;
+    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+  }
+.DropAccount a {
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    background-color: aliceblue;
+    position: relative;
+  }
+
+  .DropAccount a:hover, .DropContent a:hover {
+    color: white;
+    background-color: rgb(4, 59, 106);
+
+  }
+  .show {
+    display: block;
+  }
+
+  .showSetting {
+    display: block;
+  }
+
+/* END OF USER DROP DOWN  */
+
+
+
+/* Grettings */
+.greetingBox{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px; 
+    margin-top: 2em;
+  }
+  
+  .greetingBox h1{
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg, #231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: textclip 15s linear infinite;
+    display: inline-block;
+    animation-iteration-count: 1
     
   }
 
@@ -213,7 +977,7 @@ main{
     padding: 1em;
     border: none;
     border-radius: 1em;
-    width: 280px;
+    width: 150px;
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
@@ -268,19 +1032,13 @@ main{
 
 .exclaimBox{
     margin-top: 1.5em;
-    display: flex;
     justify-content: center;
     padding: 0 10px;
     border: 0.1em solid black;
-   
     border: none;
-    margin-left: 300px;
-    margin-right: 300px;
     font-size: 1.5em;
     text-transform: uppercase;
     border-radius: 0.5em;
-   
-    
   }
 
 .thisMonthChart{
@@ -295,24 +1053,32 @@ main{
 .oldChart{
     margin-top: 1.5em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+ 
 
 }
 
+.prevChart{
+  margin-bottom: 1.5em;
+  box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+}
+
+.lastYearChart{
+  box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+}
+
 .tabularData{
-  margin-top: 1.5em;
+    margin-top: 1.5em;
     padding: 1em;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
 }
 
 .tabularData p{
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 0.3em;
 }
@@ -325,14 +1091,16 @@ main{
 }
 
 .oldChart img{
-  width: 700px;
-  height: 500px;
+  width: 640px;
+  height: 440px;
 }
 
 .tabularData img{
-  width: 700px;
-  height: 450px;
+  width: 640px;
+  height: 400px;
   border: 0.1em solid black;
 }
 
 /* chart Image Size done */
+
+}
