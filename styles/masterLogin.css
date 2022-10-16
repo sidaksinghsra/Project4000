@@ -1,216 +1,212 @@
 /* For Desktop */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
+    body {
+        min-height: 100vh;
+    }
 
-	body{
-		min-height: 100vh;
-	}
-	
-	.loginform * {
-		box-sizing: border-box;	
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
-	
-	.loginform {
-		padding: 3.5em;
-	}
-	
-	.loginform h1 {
-		font-weight: bold;
-		margin-bottom: 0.5em;
-	}
-	
-	.loginform h2 {
-		text-align: center;
-		font-weight: 900;
-		margin-bottom: 1em;
-		margin-top: 1em;
-	}
-	
-	.LoginNav{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin-left: 1em;
-		margin-right: 1em;
-		margin-top: 1em;
-	}
-	
-	.LoginNav a{
-		text-decoration: none;
-		color: black;
-		text-transform: uppercase;
-	}
-	
-	.fa-book-open-reader{
-		font-size: 1.5em;
-	}
-	
-	#loginpage .detailsEnter label{
-		font-size: 1.1em;
-		text-transform: uppercase;
-		letter-spacing: 0.2em;
-	}
-	#loginpage .detailsEnter{
-		padding: 2em;
-	}
-	#loginpage {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		border-radius: 0.5em;
-		padding: 1em;
-		margin-right: 5em;
-		margin-left: 5em;
-		
-	}
-	
-	#loginpage button a{
-		text-decoration: none;
-		color: rgb(242, 242, 242);
-	}
-	
-	a:hover{
-		opacity: 0.9;
-	}
-	.LoginProblem{
-		margin-top: 1em;
-	}
-	.LoginProblem a{
-		color: black;
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-	
-	button {
-		outline: none;
-		border: none;
-		font-size: 0.8em;
-		width: 100%;
-		font-weight: bold;
-		padding: 1em 4em;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-	}
-	
-	button:hover{
-		background-color: black;
-		cursor: pointer;
-		color: white;
-	}
-	
-	
-	.detailsEnter input {
-		border: none;
-		border-bottom: 0.1em solid black;
-		margin: 0.5em 0;
-		margin-bottom: 2em;
-		width: 100%;
-		outline-width: 0cm;
-		border-color: inherit;
-		padding: 1em;
-	}
-	
-	.SocialLogin a {
-		display: flex;
-		background-color: transparent;
-		font-weight: 500;
-		height: auto;
-		text-align: center;
-		outline: none;
-		align-items: center;
-		box-sizing: border-box;
-		justify-content: center;
-		line-height: 22px;
-		text-decoration: none;
-		color: black;
-		border: 0.05em solid black;
-		margin-bottom: 10px; 
-		padding: 0px 22px;
-		min-height: 55px;
-		font-weight: bold;
-	}
-	.SocialLogin a:hover{
-		background-color: #eee;
-	}
-	
-	.SocialLogin span{
-		flex-grow: 1;
-	}
-	
-	.detailsEnter{
-		flex-basis: 50%;
-	}
-	.SocialForm{
-		flex-basis: 50%;
-	}
-	.SocialForm img{
-		height: 20px;
-		width: 20px;
-		margin-left: 0.2em;
-	}
-	.google img{
-		height: 30px;
-		width: 30px;
-		margin-left: 0;
-		
-	}
-	
-	.FormFill{
-		display: flex;
-		align-items: center;
-		padding: 1em;
-		margin-right: 2em;
-	}
-	.makingspace{
-		flex-direction: column;
-		align-self: stretch;
-		padding:  0px 33px;
-		box-sizing: border-box;
-		display: flex;
-		-webkit-box-align: center;
-		align-items: center;
-	}
-	.marginLine{
-		height: 100%;
-		width: 1px;
-		-webkit-box-align: center;
-		align-items: center;
-		box-sizing: border-box;
-		background: rgb(231, 231, 231);
-	}
-	.marginOR{
-		padding: 20px;
-		box-sizing: border-box;
-		text-rendering: optimizeLegibility;
-		font-weight: 500;
-		display: block;
-		font-size: 15px;
-		letter-spacing: 0.75px;
-		line-height: 16px;
-	}
-	.accountPolicy{
-		text-align: center;
-		font-size: small;
-	}
-	.accountPolicy p{
-		color: rgb(110, 110, 110);
-	}
-	.accountPolicy a{
-		color: rgb(0, 0, 0);
-	}
-	.accountPolicy a:hover{
-		color: rgb(43, 38, 28);
-	}
+    .loginForm * {
+        box-sizing: border-box;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
 
-	/* CSS For underline hover effect */
-    .underline-hover-effect{
+    .loginForm {
+        padding: 3.5em;
+    }
+
+    .loginForm h1 {
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+
+    .loginForm h2 {
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .loginNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+
+    .loginNav a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .fa-book-open-reader {
+        font-size: 1.5em;
+    }
+
+    #loginPage .detailsEnter label {
+        font-size: 1.1em;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+    #loginPage .detailsEnter {
+        padding: 2em;
+    }
+    #loginPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0.5em;
+        padding: 1em;
+        margin-right: 5em;
+        margin-left: 5em;
+    }
+
+    #loginPage button a {
+        text-decoration: none;
+        color: rgb(242, 242, 242);
+    }
+
+    a:hover {
+        opacity: 0.9;
+    }
+    .loginProblem {
+        margin-top: 1em;
+    }
+    .loginProblem a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    button {
+        outline: none;
+        border: none;
+        font-size: 0.8em;
+        width: 100%;
+        font-weight: bold;
+        padding: 1em 4em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    button:hover {
+        background-color: black;
+        cursor: pointer;
+        color: white;
+    }
+
+    .detailsEnter input {
+        border: none;
+        border-bottom: 0.1em solid black;
+        margin: 0.5em 0;
+        margin-bottom: 2em;
+        width: 100%;
+        outline-width: 0cm;
+        border-color: inherit;
+        padding: 1em;
+    }
+
+    .socialLogin a {
+        display: flex;
+        background-color: transparent;
+        font-weight: 500;
+        height: auto;
+        text-align: center;
+        outline: none;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: center;
+        line-height: 22px;
+        text-decoration: none;
+        color: black;
+        border: 0.05em solid black;
+        margin-bottom: 10px;
+        padding: 0px 22px;
+        min-height: 55px;
+        font-weight: bold;
+    }
+    .socialLogin a:hover {
+        background-color: #eee;
+    }
+
+    .socialLogin span {
+        flex-grow: 1;
+    }
+
+    .detailsEnter {
+        flex-basis: 50%;
+    }
+    .socialForm {
+        flex-basis: 50%;
+    }
+    .socialForm img {
+        height: 20px;
+        width: 20px;
+        margin-left: 0.2em;
+    }
+    .google img {
+        height: 30px;
+        width: 30px;
+        margin-left: 0;
+    }
+
+    .formFill {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        margin-right: 2em;
+    }
+    .makingSpace {
+        flex-direction: column;
+        align-self: stretch;
+        padding: 0px 33px;
+        box-sizing: border-box;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .marginLine {
+        height: 100%;
+        width: 1px;
+        -webkit-box-align: center;
+        align-items: center;
+        box-sizing: border-box;
+        background: rgb(231, 231, 231);
+    }
+    .marginOr {
+        padding: 20px;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        font-weight: 500;
+        display: block;
+        font-size: 15px;
+        letter-spacing: 0.75px;
+        line-height: 16px;
+    }
+    .accountPolicy {
+        text-align: center;
+        font-size: small;
+    }
+    .accountPolicy p {
+        color: rgb(110, 110, 110);
+    }
+    .accountPolicy a {
+        color: rgb(0, 0, 0);
+    }
+    .accountPolicy a:hover {
+        color: rgb(43, 38, 28);
+    }
+
+    /* CSS For underline hover effect */
+    .underlineHoverEffect {
         display: inline-block;
         position: relative;
         padding-bottom: 0.25rem;
         cursor: pointer;
     }
-    .underline-hover-effect::before{
-        content: "";
+    .underlineHoverEffect::before {
+        content: '';
         position: absolute;
         right: 0;
         left: 0;
@@ -220,189 +216,183 @@
         background-color: black;
         transition: width 0.35s ease-out;
     }
-    .underline-hover-effect:hover::before{
+    .underlineHoverEffect:hover::before {
         width: 100%;
     }
     /* End of hover effect */
-	
 }
 
 /* For Mobile Version */
-@media screen and (max-width:768px){
-	body{
-		min-height: 100vh;
-	}
-	
-	.loginform * {
-		box-sizing: border-box;	
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
-	
-	.loginform h2 {
-		text-align: center;
-	}
-	
-	.LoginNav{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin-left: 1em;
-		margin-right: 1em;
-		margin-top: 1em;
-	}
-	.LoginNav a{
-		text-decoration: none;
-		color: black;
-		text-transform: uppercase;
-	}
-	
-	
-	.fa-book-open-reader{
-		font-size: 1.5em;
-	}
-	
-	#loginpage .detailsEnter label{
-		text-transform: uppercase;
-		letter-spacing: 0.2em;
-	}
+@media screen and (max-width: 768px) {
+    body {
+        min-height: 100vh;
+    }
 
-	
-	#loginpage {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	#loginpage button a{
-		text-decoration: none;
-		color: rgb(242, 242, 242);
-	}
-	
-	.LoginProblem{
-		margin-top: 1em;
-	}
-	.LoginProblem a{
-		color: black;
-		text-decoration: none;
-	}
-	
-	
-	button {
-		outline: none;
-		border: none;
-		font-size: 0.8em;
-		width: 100%;
-		font-weight: bold;
-		padding: 1em 4em;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-	}
+    .loginForm * {
+        box-sizing: border-box;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
 
-	button:hover{
-		background-color: black;
-		cursor: pointer;
-		color: white;
-	}
-	
-	.detailsEnter input {
-		border: none;
-		border-bottom: 0.1em solid black;
-		margin: 0.5em 0;
-		margin-bottom: 2em;
-		width: 100%;
-		outline-width: 0cm;
-		border-color: inherit;
-		padding: 1em;
-	}
-	
-	.SocialLogin a {
-		display: flex;
-		background-color: transparent;
-		font-weight: 500;
-		height: auto;
-		text-align: center;
-		outline: none;
-		align-items: center;
-		box-sizing: border-box;
-		justify-content: center;
-		line-height: 22px;
-		text-decoration: none;
-		color: black;
-		border: 0.05em solid black;
-		margin-bottom: 10px; 
-		padding: 0px 22px;
-		min-height: 55px;
-		font-weight: bold;
-	}
-	
-	
-	.SocialLogin span{
-		flex-grow: 1;
-	}
-	
-	.detailsEnter{
-		flex-basis: 50%;
-	}
-	.SocialForm{
-		flex-basis: 50%;
-	}
-	.SocialForm img{
-		height: 20px;
-		width: 20px;
-		margin-left: 0.2em;
-	}
-	.google img{
-		height: 30px;
-		width: 30px;
-		margin-left: 0;
-		
-	}
-	
-	.FormFill{
-		align-items: center;
-		padding: 1em;
-	}
-	.makingspace{
-		flex-direction: row;
-	
-		justify-content: center;
-		
-		display: flex;
-		-webkit-box-align: center;
-		align-items: center;
-	}
-	
-	.marginOR{
-		padding: 20px;
-		font-weight: 500;
-		display: block;
-		font-size: 15px;
-		letter-spacing: 0.75px;
-	}
-	
-	.accountPolicy{
-		text-align: center;
-		font-size: small;
-	}
-	.accountPolicy p{
-		color: rgb(110, 110, 110);
-		font-size:small;
-		text-align: justify;
-		padding: 0.5em;
-	}
-	.accountPolicy a{
-		color: rgb(0, 0, 0);
-	}
+    .loginForm h2 {
+        text-align: center;
+    }
 
-	/* CSS For underline hover effect */
-    .underline-hover-effect{
+    .loginNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+    .loginNav a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .fa-book-open-reader {
+        font-size: 1.5em;
+    }
+
+    #loginPage .detailsEnter label {
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+
+    #loginPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #loginPage button a {
+        text-decoration: none;
+        color: rgb(242, 242, 242);
+    }
+
+    .loginProblem {
+        margin-top: 1em;
+    }
+    .loginProblem a {
+        color: black;
+        text-decoration: none;
+    }
+
+    button {
+        outline: none;
+        border: none;
+        font-size: 0.8em;
+        width: 100%;
+        font-weight: bold;
+        padding: 1em 4em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    button:hover {
+        background-color: black;
+        cursor: pointer;
+        color: white;
+    }
+
+    .detailsEnter input {
+        border: none;
+        border-bottom: 0.1em solid black;
+        margin: 0.5em 0;
+        margin-bottom: 2em;
+        width: 100%;
+        outline-width: 0cm;
+        border-color: inherit;
+        padding: 1em;
+    }
+
+    .socialLogin a {
+        display: flex;
+        background-color: transparent;
+        font-weight: 500;
+        height: auto;
+        text-align: center;
+        outline: none;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: center;
+        line-height: 22px;
+        text-decoration: none;
+        color: black;
+        border: 0.05em solid black;
+        margin-bottom: 10px;
+        padding: 0px 22px;
+        min-height: 55px;
+        font-weight: bold;
+    }
+
+    .socialLogin span {
+        flex-grow: 1;
+    }
+
+    .detailsEnter {
+        flex-basis: 50%;
+    }
+    .socialForm {
+        flex-basis: 50%;
+    }
+    .socialForm img {
+        height: 20px;
+        width: 20px;
+        margin-left: 0.2em;
+    }
+    .google img {
+        height: 30px;
+        width: 30px;
+        margin-left: 0;
+    }
+
+    .formFill {
+        align-items: center;
+        padding: 1em;
+    }
+    .makingSpace {
+        flex-direction: row;
+
+        justify-content: center;
+
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .marginOr {
+        padding: 20px;
+        font-weight: 500;
+        display: block;
+        font-size: 15px;
+        letter-spacing: 0.75px;
+    }
+
+    .accountPolicy {
+        text-align: center;
+        font-size: small;
+    }
+    .accountPolicy p {
+        color: rgb(110, 110, 110);
+        font-size: small;
+        text-align: justify;
+        padding: 0.5em;
+    }
+    .accountPolicy a {
+        color: rgb(0, 0, 0);
+    }
+
+    /* CSS For underline hover effect */
+    .underlineHoverEffect {
         display: inline-block;
         position: relative;
         padding-bottom: 0.25rem;
         cursor: pointer;
     }
-    .underline-hover-effect::before{
-        content: "";
+    .underlineHoverEffect::before {
+        content: '';
         position: absolute;
         right: 0;
         left: 0;
@@ -412,188 +402,183 @@
         background-color: black;
         transition: width 0.35s ease-out;
     }
-    .underline-hover-effect:hover::before{
+    .underlineHoverEffect:hover::before {
         width: 100%;
     }
     /* End of hover effect */
-
 }
 
 /* For Tablets Version or Landscape */
-@media screen and (min-width:768px) and (max-width:1024px) {
-	body{
-		min-height: 100vh;
-	}
-	
-	.loginform * {
-		box-sizing: border-box;	
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
-	
-	.loginform h2 {
-		text-align: center;
-	}
-	
-	.LoginNav{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin-left: 1em;
-		margin-right: 1em;
-		margin-top: 1em;
-	}
-	.LoginNav a{
-		text-decoration: none;
-		color: black;
-		text-transform: uppercase;
-	}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        min-height: 100vh;
+    }
 
-	
-	.fa-book-open-reader{
-		font-size: 1.5em;
-	}
-	
-	#loginpage .detailsEnter label{
-		text-transform: uppercase;
-		letter-spacing: 0.2em;
-	}
+    .loginForm * {
+        box-sizing: border-box;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
 
-	
-	#loginpage {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	#loginpage button a{
-		text-decoration: none;
-		color: rgb(242, 242, 242);
-	}
-	
-	.LoginProblem{
-		margin-top: 1em;
-	}
-	.LoginProblem a{
-		color: black;
-		text-decoration: none;
-	}
-	
-	button {
-		outline: none;
-		border: none;
-		font-size: 0.8em;
-		width: 100%;
-		font-weight: bold;
-		padding: 1em 4em;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-	}
+    .loginForm h2 {
+        text-align: center;
+    }
 
-	button:hover{
-		background-color: black;
-		cursor: pointer;
-		color: white;
-	}
-	
-	.detailsEnter input {
-		border: none;
-		border-bottom: 0.1em solid black;
-		margin: 0.5em 0;
-		margin-bottom: 2em;
-		width: 100%;
-		outline-width: 0cm;
-		border-color: inherit;
-		padding: 1em;
-	}
-	
-	.SocialLogin a {
-		display: flex;
-		background-color: transparent;
-		font-weight: 500;
-		height: auto;
-		text-align: center;
-		outline: none;
-		align-items: center;
-		box-sizing: border-box;
-		justify-content: center;
-		line-height: 22px;
-		text-decoration: none;
-		color: black;
-		border: 0.05em solid black;
-		margin-bottom: 10px; 
-		padding: 0px 22px;
-		min-height: 55px;
-		font-weight: bold;
-	}
-	
-	
-	.SocialLogin span{
-		flex-grow: 1;
-	}
-	
-	.detailsEnter{
-		flex-basis: 50%;
-	}
-	.SocialForm{
-		flex-basis: 50%;
-	}
-	.SocialForm img{
-		height: 20px;
-		width: 20px;
-		margin-left: 0.2em;
-	}
-	.google img{
-		height: 30px;
-		width: 30px;
-		margin-left: 0;
-		
-	}
-	
-	.FormFill{
-		align-items: center;
-		padding: 1em;
-	}
-	.makingspace{
-		flex-direction: row;
-	
-		justify-content: center;
-		
-		display: flex;
-		-webkit-box-align: center;
-		align-items: center;
-	}
-	
-	.marginOR{
-		padding: 20px;
-		font-weight: 500;
-		display: block;
-		font-size: 15px;
-		letter-spacing: 0.75px;
-	}
-	
-	.accountPolicy{
-		text-align: center;
-		font-size: small;
-	}
-	.accountPolicy p{
-		color: rgb(110, 110, 110);
-		font-size:small;
-		text-align: justify;
-		padding: 0.5em;
-	}
-	.accountPolicy a{
-		color: rgb(0, 0, 0);
-	}
+    .loginNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+    .loginNav a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+    }
 
-	/* CSS For underline hover effect */
-    .underline-hover-effect{
+    .fa-book-open-reader {
+        font-size: 1.5em;
+    }
+
+    #loginPage .detailsEnter label {
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+
+    #loginPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #loginPage button a {
+        text-decoration: none;
+        color: rgb(242, 242, 242);
+    }
+
+    .loginProblem {
+        margin-top: 1em;
+    }
+    .LoginProblem a {
+        color: black;
+        text-decoration: none;
+    }
+
+    button {
+        outline: none;
+        border: none;
+        font-size: 0.8em;
+        width: 100%;
+        font-weight: bold;
+        padding: 1em 4em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    button:hover {
+        background-color: black;
+        cursor: pointer;
+        color: white;
+    }
+
+    .detailsEnter input {
+        border: none;
+        border-bottom: 0.1em solid black;
+        margin: 0.5em 0;
+        margin-bottom: 2em;
+        width: 100%;
+        outline-width: 0cm;
+        border-color: inherit;
+        padding: 1em;
+    }
+
+    .socialLogin a {
+        display: flex;
+        background-color: transparent;
+        font-weight: 500;
+        height: auto;
+        text-align: center;
+        outline: none;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: center;
+        line-height: 22px;
+        text-decoration: none;
+        color: black;
+        border: 0.05em solid black;
+        margin-bottom: 10px;
+        padding: 0px 22px;
+        min-height: 55px;
+        font-weight: bold;
+    }
+
+    .socialLogin span {
+        flex-grow: 1;
+    }
+
+    .detailsEnter {
+        flex-basis: 50%;
+    }
+    .socialForm {
+        flex-basis: 50%;
+    }
+    .socialForm img {
+        height: 20px;
+        width: 20px;
+        margin-left: 0.2em;
+    }
+    .google img {
+        height: 30px;
+        width: 30px;
+        margin-left: 0;
+    }
+
+    .formFill {
+        align-items: center;
+        padding: 1em;
+    }
+    .makingSpace {
+        flex-direction: row;
+
+        justify-content: center;
+
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .marginOr {
+        padding: 20px;
+        font-weight: 500;
+        display: block;
+        font-size: 15px;
+        letter-spacing: 0.75px;
+    }
+
+    .accountPolicy {
+        text-align: center;
+        font-size: small;
+    }
+    .accountPolicy p {
+        color: rgb(110, 110, 110);
+        font-size: small;
+        text-align: justify;
+        padding: 0.5em;
+    }
+    .accountPolicy a {
+        color: rgb(0, 0, 0);
+    }
+
+    /* CSS For underline hover effect */
+    .underlineHoverEffect {
         display: inline-block;
         position: relative;
         padding-bottom: 0.25rem;
         cursor: pointer;
     }
-    .underline-hover-effect::before{
-        content: "";
+    .underlineHoverEffect::before {
+        content: '';
         position: absolute;
         right: 0;
         left: 0;
@@ -603,10 +588,8 @@
         background-color: black;
         transition: width 0.35s ease-out;
     }
-    .underline-hover-effect:hover::before{
+    .underlineHoverEffect:hover::before {
         width: 100%;
     }
     /* End of hover effect */
-
-
 }

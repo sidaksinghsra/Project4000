@@ -1,1106 +1,1095 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapLoginProblemis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap');
 
-@media screen and (min-width: 1024px){
-
-  body{
-      min-height: 100vh;	
-      margin: 0;
-  }
-
-  #nav-head{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      color: white;
-      background-color: white;
-      position: fixed;
-      width: 100%;
-      box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -20px;
-      vertical-align: baseline;
-      padding: 0.3em;
+@media screen and (min-width: 1024px) {
+    body {
+        min-height: 100vh;
+        margin: 0;
     }
 
-  #main-content{
-      transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
-      padding: 2em;
-
-  }
-  #nav-head{
-    transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
-  
-  }
-
-  .fa-book-open-reader{
-      font-size: 1.5em;
-      color: black;
-  }
-  /* For search bar */
-
-  .search-input{
-      border-radius: 0.1em;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
-      width: 300px;
-      text-indent:25px;
-      border: 0.01em solid rgb(148, 148, 148);
-      border-radius: 1em;
-      font-size: 0.9em;
-  }
-  .search-input:focus{
-    outline: none;
-    border: none;
-    border-bottom: 0.1em solid rgb(148, 148, 148);
-    border-radius: 0;
-    background-color: white;
-  }
-
-
-  /* End of hover effect */
-  .fa-search{
-    position: relative;
-    left: 28px;
-    top:1px;
-    color:#17171e;
-
-  }
-
-  /* end of search bar */
-
-
-
-
-  /* For Left Menu Bar Drop Down */
-
-  .sidebar {
-    height: 100%; 
-    width: 0;
-    position: fixed; 
-    z-index: 1; 
-    top: 0;
-    left: 0;
-    background-color: #17171e;
-    overflow-x: hidden;
-    padding-top: 60px; 
-    transition: 0.5s; 
-  }
-
-  .sidebar a {
-    padding: 25px 8px 8px 25px;
-    text-decoration: none;
-    font-size: 23px;
-    color: #bababa;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  .closebtn{
-    font-size: 1.5em;
-    cursor: pointer;
-    color: #bababa;
-    padding: 8px 0px;
-    border: none;
-  }
-
-  .closebtn:hover{
-    color: white;
-  }
-  .openbtn {
-    font-size: 1.5em;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    padding: 10px 15px;
-    border: none;
-  }
-
-  .openbtn:hover {
-    opacity: 0.6;
-  }
-
-  .fa-th-large, .fa-gear, .fa-comment-dots, .fa-chart-bar{
-    margin-right: 0.5em;
-  }
-  /* END OF SideNav  */
-
-  /* For right hand side User Account Drop Down */
-
-  .AccountButton:hover{
-    opacity: 0.6;
-  }
-    .user-profile-dropdown {
-      float: left;
-      overflow: hidden;
+    #navHead {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -20px;
+        vertical-align: baseline;
+        padding: 0.3em;
     }
 
- .AccountButton {
-      cursor: pointer;
-      font-size: 1.3em;  
-      border: none;
-      text-decoration: none;
-      padding: 0.5em;
-      background-color: white;
-      padding: 10px 15px;
-      font-size: 1.5em;
+    #mainContent {
+        transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+        padding: 2em;
+    }
+    #navHead {
+        transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
     }
 
-    
-  .DropAccount {
-      display: none;
-      z-index: 1;
-      right: 1px;
-      position: absolute;
-      min-width: 100px;
-      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    .fa-book-open-reader {
+        font-size: 1.5em;
+        color: black;
     }
-  .DropAccount a {
-      color: black;
-      padding: 1em;
-      text-decoration: none;
-      display: block;
-      background-color: aliceblue;
-      position: relative;
+    /* For search bar */
+
+    .search-input {
+        border-radius: 0.1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        width: 300px;
+        text-indent: 25px;
+        border: 0.01em solid rgb(148, 148, 148);
+        border-radius: 1em;
+        font-size: 0.9em;
+    }
+    .search-input:focus {
+        outline: none;
+        border: none;
+        border-bottom: 0.1em solid rgb(148, 148, 148);
+        border-radius: 0;
+        background-color: white;
     }
 
-    .DropAccount a:hover, .DropContent a:hover {
-      color: white;
-      background-color: rgb(4, 59, 106);
+    /* End of hover effect */
+    .fa-search {
+        position: relative;
+        left: 28px;
+        top: 1px;
+        color: #17171e;
+    }
 
+    /* end of search bar */
+
+    /* For Left Menu Bar Drop Down */
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #17171e;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+
+    .sidebar a {
+        padding: 25px 8px 8px 25px;
+        text-decoration: none;
+        font-size: 23px;
+        color: #bababa;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidebar .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .closeBtn {
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #bababa;
+        padding: 8px 0px;
+        border: none;
+    }
+
+    .closeBtn:hover {
+        color: white;
+    }
+    .openBtn {
+        font-size: 1.5em;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openBtn:hover {
+        opacity: 0.6;
+    }
+
+    .fa-th-large,
+    .fa-gear,
+    .fa-comment-dots,
+    .fa-chart-bar {
+        margin-right: 0.5em;
+    }
+    /* END OF SideNav  */
+
+    /* For right hand side User Account Drop Down */
+
+    .accountButton:hover {
+        opacity: 0.6;
+    }
+    .userProfileDropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .accountButton {
+        cursor: pointer;
+        font-size: 1.3em;
+        border: none;
+        text-decoration: none;
+        padding: 0.5em;
+        background-color: white;
+        padding: 10px 15px;
+        font-size: 1.5em;
+    }
+
+    .dropAccount {
+        display: none;
+        z-index: 1;
+        right: 1px;
+        position: absolute;
+        min-width: 100px;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+    .dropAccount a {
+        color: black;
+        padding: 1em;
+        text-decoration: none;
+        display: block;
+        background-color: aliceblue;
+        position: relative;
+    }
+
+    .dropAccount a:hover,
+    .DropContent a:hover {
+        color: white;
+        background-color: rgb(4, 59, 106);
     }
     .show {
-      display: block;
+        display: block;
     }
 
     .showSetting {
-      display: block;
+        display: block;
     }
 
-  /* END OF USER DROP DOWN  */
+    /* END OF USER DROP DOWN  */
 
-
-
-  /* Grettings */
-  .greetingBox{
-      display: flex;
-      justify-content: center;
-      padding: 0 10px; 
-      margin-top: 2em;
+    /* Grettings */
+    .greetingBox {
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+        margin-top: 2em;
     }
-    
-    .greetingBox h1{
-      text-transform: uppercase;
-      background-image: linear-gradient(-225deg, #231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
-      background-size: auto auto;
-      background-clip: border-box;
-      background-size: 200% auto;
-      color: #fff;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      animation: textclip 15s linear infinite;
-      display: inline-block;
-      animation-iteration-count: 1
-      
+
+    .greetingBox h1 {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: textclip 15s linear infinite;
+        display: inline-block;
+        animation-iteration-count: 1;
     }
 
     @keyframes textclip {
-      to {
-        background-position: 200% center;
-      }
-    }
-    
-
-  .avgFigure{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin-top: 3em;
-      border-radius: 0.3em;
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-      padding-top: 2em;
-      padding-bottom: 2em;
-  }
-
-
-  .thisMonth,.prevMonth, .lastYear {
-      border: 0.1em solid black;
-      padding: 1em;
-      border: none;
-      border-radius: 1em;
-      width: 280px;
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-weight: bold;
-      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-      cursor:default;
-      
-  }
-  .thisMonth:hover {
-    transform: scale(1.1); 
-  }
-  .thisMonth { transition: all .2s ease-in-out; }
-
-  .prevMonth:hover {
-    transform: scale(1.1); 
-  }
-  .prevMonth { transition: all .2s ease-in-out; }
-
-  .lastYear:hover {
-    transform: scale(1.1); 
-  }
-  .lastYear { transition: all .2s ease-in-out; }
-
-  .thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
-    font-size: 2em;
-    font-family: 'Lobster', cursive;
-    font-weight: normal;
-    color: black;
-
-  }
-
-  .thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
-    text-transform: uppercase;
-  }
-
-
-
-  .thisMonth{
-    background-image: linear-gradient(#eecda3, #f086e0 );
-  }
-  .prevMonth{
-    background-image: linear-gradient(#e2f3d6 , #b3f795 );
-  }
-  .lastYear{
-    background-image: linear-gradient(#8cdde3, #739aed );
-  }
-
-
-
-  .thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue {
-      text-align: center;
-  }
-
-  .exclaimBox{
-      margin-top: 1.5em;
-      display: flex;
-      justify-content: center;
-      padding: 0 10px;
-      border: 0.1em solid black;
-    
-      border: none;
-      margin-left: 300px;
-      margin-right: 300px;
-      font-size: 1.5em;
-      text-transform: uppercase;
-      border-radius: 0.5em;
-    
-      
+        to {
+            background-position: 200% center;
+        }
     }
 
-  .thisMonthChart{
-      margin-top: 3em;
-      display: flex;
-      justify-content: center;
-      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-      
-  }
+    .avgFigure {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3em;
+        border-radius: 0.3em;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+            rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+            rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+            rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
 
+    .thisMonth,
+    .prevMonth,
+    .lastYear {
+        border: 0.1em solid black;
+        padding: 1em;
+        border: none;
+        border-radius: 1em;
+        width: 280px;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+        cursor: default;
+    }
+    .thisMonth:hover {
+        transform: scale(1.1);
+    }
+    .thisMonth {
+        transition: all 0.2s ease-in-out;
+    }
 
-  .oldChart{
-      margin-top: 1.5em;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    .prevMonth:hover {
+        transform: scale(1.1);
+    }
+    .prevMonth {
+        transition: all 0.2s ease-in-out;
+    }
 
-  }
+    .lastYear:hover {
+        transform: scale(1.1);
+    }
+    .lastYear {
+        transition: all 0.2s ease-in-out;
+    }
 
-  .tabularData{
-    margin-top: 1.5em;
-      padding: 1em;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-  }
+    .thisMonthRevenue,
+    .prevMonthRevenue,
+    .lastYearRevenue {
+        font-size: 2em;
+        font-family: 'Lobster', cursive;
+        font-weight: normal;
+        color: black;
+    }
 
-  .tabularData p{
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 0.3em;
-  }
+    .thisMonthRevenue,
+    .prevMonthRevenue,
+    .lastYearRevenue {
+        text-transform: uppercase;
+    }
 
+    .thisMonth {
+        background-image: linear-gradient(#eecda3, #f086e0);
+    }
+    .prevMonth {
+        background-image: linear-gradient(#e2f3d6, #b3f795);
+    }
+    .lastYear {
+        background-image: linear-gradient(#8cdde3, #739aed);
+    }
 
-  /* Chart Images Size */
-  .thisMonthChart img{
-    width: 700px;
-    height: 500px;
-  }
+    .thisMonthRevenue,
+    .prevMonthRevenue,
+    .lastYearRevenue {
+        text-align: center;
+    }
 
-  .oldChart img{
-    width: 640px;
-    height: 440px;
-  }
+    .exclaimBox {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+        border: 0.1em solid black;
 
-  .tabularData img{
-    width: 700px;
-    height: 450px;
-    border: 0.1em solid black;
-  }
+        border: none;
+        margin-left: 300px;
+        margin-right: 300px;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        border-radius: 0.5em;
+    }
 
-  /* chart Image Size done */
+    .thisMonthChart {
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+
+    .oldChart {
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+
+    .tabularData {
+        margin-top: 1.5em;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+
+    .tabularData p {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 0.3em;
+    }
+
+    /* Chart Images Size */
+    .thisMonthChart img {
+        width: 700px;
+        height: 500px;
+    }
+
+    .oldChart img {
+        width: 640px;
+        height: 440px;
+    }
+
+    .tabularData img {
+        width: 700px;
+        height: 450px;
+        border: 0.1em solid black;
+    }
+
+    /* chart Image Size done */
 }
-
-
-
-
-
-
 
 /* For Mobile Version */
-@media screen and (max-width:768px){
-	body{
-		min-height: 100vh;
-	}
-
-  #nav-head{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -20px;
-    vertical-align: baseline;
-    top:0;
-  }
-
-#main-content{
-    transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
-    padding: 2em;
-
-}
-#nav-head{
-  transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
-
-}
-
-.fa-book-open-reader{
-    font-size: 1.2em;
-    color: black;
-}
-/* For search bar */
-
-.search-input{
-    border-radius: 0.1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    width: 100px;
-    text-indent:25px;
-    border: 0.01em solid rgb(148, 148, 148);
-    border-radius: 1em;
-    font-size: 0.9em;
-}
-.search-input:focus{
-  outline: none;
-  border: none;
-  border-bottom: 0.1em solid rgb(148, 148, 148);
-  border-radius: 0;
-  background-color: white;
-}
-
-
-/* End of hover effect */
-.fa-search{
-  position: relative;
-  left: 28px;
-  top:1px;
-  color:#17171e;
-
-}
-
-/* end of search bar */
-
-/* For Left Menu Bar Drop Down */
-
-
-.sidebar {
-  height: 100%; 
-  width: 0;
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-  left: 0;
-  background-color: #17171e;
-  overflow-x: hidden;
-  padding-top: 60px; 
-  transition: 0.5s; 
-}
-
-.sidebar a {
-  padding: 10px 2px 8px 10px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #bababa;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.closebtn{
-  font-size: 1.5em;
-  cursor: pointer;
-  color: #bababa;
-  padding: 8px 0px;
-  border: none;
-}
-
-.closebtn:hover{
-  color: white;
-}
-.openbtn {
-  font-size: 1.2em;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  opacity: 0.6;
-}
-
-.fa-th-large, .fa-gear, .fa-comment-dots, .fa-chart-bar{
-  margin-right: 0.5em;
-}
-/* END OF SideNav  */
-
-/* For right hand side User Account Drop Down */
-
-.AccountButton:hover{
-  opacity: 0.6;
-}
-  .user-profile-dropdown {
-    float: left;
-    overflow: hidden;
-  }
-
-  .user-profile-dropdown .AccountButton {
-    cursor: pointer;
-    font-size: 1.4em;  
-    border: none;
-    text-decoration: none;
-    padding: 0.5em;
-    background-color: white;
-    margin-right: 0.5em;
-  }
-
-  
-.DropAccount {
-    display: none;
-    z-index: 1;
-    right: 1px;
-    position: absolute;
-    min-width: 100px;
-    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-  }
-.DropAccount a {
-    color: black;
-    padding: 1em;
-    text-decoration: none;
-    display: block;
-    background-color: aliceblue;
-    position: relative;
-  }
-
-  .DropAccount a:hover, .DropContent a:hover {
-    color: white;
-    background-color: rgb(4, 59, 106);
-
-  }
-  .show {
-    display: block;
-  }
-
-  .showSetting {
-    display: block;
-  }
-
-/* END OF USER DROP DOWN  */
-
-
-
-/* Grettings */
-.greetingBox{
-    display: flex;
-    justify-content: center;
-    padding: 0 10px; 
-    margin-top: 2em;
-  }
-  
-  .greetingBox h1{
-    text-transform: uppercase;
-    font-size: 1.5em;
-    background-image: linear-gradient(-225deg, #231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: textclip 15s linear infinite;
-    display: inline-block;
-    animation-iteration-count: 1
-    
-  }
-
-  @keyframes textclip {
-    to {
-      background-position: 200% center;
+@media screen and (max-width: 768px) {
+    body {
+        min-height: 100vh;
     }
-  }
-  
 
-.avgFigure{
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
-    border-radius: 0.3em;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    align-items:center;
+    #navHead {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -20px;
+        vertical-align: baseline;
+        top: 0;
+    }
+
+    #mainContent {
+        transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+        padding: 2em;
+    }
+    #navHead {
+        transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+    }
+
+    .fa-book-open-reader {
+        font-size: 1.2em;
+        color: black;
+    }
+    /* For search bar */
+
+    .search-input {
+        border-radius: 0.1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        width: 100px;
+        text-indent: 25px;
+        border: 0.01em solid rgb(148, 148, 148);
+        border-radius: 1em;
+        font-size: 0.9em;
+    }
+    .search-input:focus {
+        outline: none;
+        border: none;
+        border-bottom: 0.1em solid rgb(148, 148, 148);
+        border-radius: 0;
+        background-color: white;
+    }
+
+    /* End of hover effect */
+    .fa-search {
+        position: relative;
+        left: 28px;
+        top: 1px;
+        color: #17171e;
+    }
+
+    /* end of search bar */
+
+    /* For Left Menu Bar Drop Down */
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #17171e;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+
+    .sidebar a {
+        padding: 10px 2px 8px 10px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #bababa;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidebar .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .closeBtn {
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #bababa;
+        padding: 8px 0px;
+        border: none;
+    }
+
+    .closeBtn:hover {
+        color: white;
+    }
+    .openBtn {
+        font-size: 1.2em;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openBtn:hover {
+        opacity: 0.6;
+    }
+
+    .fa-th-large,
+    .fa-gear,
+    .fa-comment-dots,
+    .fa-chart-bar {
+        margin-right: 0.5em;
+    }
+    /* END OF SideNav  */
+
+    /* For right hand side User Account Drop Down */
+
+    .accountButton:hover {
+        opacity: 0.6;
+    }
+    .userProfileDropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .userProfileDropdown .accountButton {
+        cursor: pointer;
+        font-size: 1.4em;
+        border: none;
+        text-decoration: none;
+        padding: 0.5em;
+        background-color: white;
+        margin-right: 0.5em;
+    }
+
+    .dropAccount {
+        display: none;
+        z-index: 1;
+        right: 1px;
+        position: absolute;
+        min-width: 100px;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+    .dropAccount a {
+        color: black;
+        padding: 1em;
+        text-decoration: none;
+        display: block;
+        background-color: aliceblue;
+        position: relative;
+    }
+
+    .dropAccount a:hover,
+    .DropContent a:hover {
+        color: white;
+        background-color: rgb(4, 59, 106);
+    }
+    .show {
+        display: block;
+    }
+
+    .showSetting {
+        display: block;
+    }
+
+    /* END OF USER DROP DOWN  */
+
+    /* Grettings */
+    .greetingBox {
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+        margin-top: 2em;
+    }
+
+    .greetingBox h1 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        background-image: linear-gradient(
+            -225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: textclip 15s linear infinite;
+        display: inline-block;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    .avgFigure {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        border-radius: 0.3em;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+            rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+            rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+            rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        align-items: center;
+    }
+
+    .thisMonth,
+    .prevMonth,
+    .lastYear {
+        border: 0.1em solid black;
+        padding: 1em;
+
+        margin-top: 1em;
+
+        border: none;
+        border-radius: 1em;
+        width: 150px;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+        cursor: default;
+    }
+    .thisMonth:hover {
+        transform: scale(1.1);
+    }
+    .thisMonth {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .prevMonth:hover {
+        transform: scale(1.1);
+    }
+    .prevMonth {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .lastYear:hover {
+        transform: scale(1.1);
+    }
+    .lastYear {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .thisMonthRevenue,
+    .prevMonthRevenue,
+    .lastYearRevenue {
+        font-size: 1em;
+        font-family: 'Lobster', cursive;
+        font-weight: normal;
+        color: black;
+    }
+
+    .thisMonthRevenue,
+    .prevMonthRevenue,
+    .lastYearRevenue {
+        text-transform: uppercase;
+    }
+
+    .thisMonth {
+        background-image: linear-gradient(#eecda3, #f086e0);
+    }
+    .prevMonth {
+        background-image: linear-gradient(#e2f3d6, #b3f795);
+    }
+    .lastYear {
+        background-image: linear-gradient(#8cdde3, #739aed);
+    }
+
+    .thisMonthRevenue,
+    .prevMonthRevenue,
+    .lastYearRevenue {
+        text-align: center;
+    }
+
+    .exclaimBox {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+        font-size: 1.1em;
+        text-transform: uppercase;
+    }
+
+    .thisMonthChart {
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .oldChart {
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prevChart {
+        margin-bottom: 1.5em;
+    }
+
+    .tabularData {
+        margin-top: 1.5em;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .tabularData p {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 0.3em;
+    }
+
+    /* Chart Images Size */
+    .thisMonthChart img {
+        width: 320px;
+        height: 200px;
+    }
+
+    .oldChart img {
+        width: 320px;
+        height: 200px;
+    }
+
+    .tabularData img {
+        width: 300px;
+        height: 200px;
+        border: 0.1em solid black;
+    }
+
+    /* chart Image Size done */
 }
-
-
-.thisMonth,.prevMonth, .lastYear {
-    border: 0.1em solid black;
-    padding: 1em;
-    
-    margin-top: 1em;
-  
-    border: none;
-    border-radius: 1em;
-    width: 150px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-    cursor:default;
-    
-}
-.thisMonth:hover {
-  transform: scale(1.1); 
-}
-.thisMonth { transition: all .2s ease-in-out; }
-
-.prevMonth:hover {
-  transform: scale(1.1); 
-}
-.prevMonth { transition: all .2s ease-in-out; }
-
-.lastYear:hover {
-  transform: scale(1.1); 
-}
-.lastYear { transition: all .2s ease-in-out; }
-
-.thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
-  font-size: 1em;
-  font-family: 'Lobster', cursive;
-  font-weight: normal;
-  color: black;
-
-}
-
-.thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
-  text-transform: uppercase;
-}
-
-
-
-.thisMonth{
-  background-image: linear-gradient(#eecda3, #f086e0 );
-}
-.prevMonth{
-  background-image: linear-gradient(#e2f3d6 , #b3f795 );
-}
-.lastYear{
-  background-image: linear-gradient(#8cdde3, #739aed );
-}
-
-
-
-.thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue {
-    text-align: center;
-}
-
-.exclaimBox{
-    margin-top: 1.5em;
-    display: flex;
-    justify-content: center;
-    padding: 0 10px;
-    font-size: 1.1em;
-    text-transform: uppercase;
-  }
-
-.thisMonthChart{
-    margin-top: 3em;
-    display: flex;
-    justify-content: center;
-}
-
-
-.oldChart{
-    margin-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.prevChart{
-    margin-bottom: 1.5em;
-}
-
-.tabularData{
-  margin-top: 1.5em;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.tabularData p{
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 0.3em;
-}
-
-
-/* Chart Images Size */
-.thisMonthChart img{
-  width: 320px;
-  height: 200px;
-}
-
-.oldChart img{
-  width: 320px;
-  height: 200px;
-}
-
-.tabularData img{
-  width: 300px;
-  height: 200px;
-  border: 0.1em solid black;
-}
-
-/* chart Image Size done */
-
-
-}
-
-
-
-
-
-
-
-
-
-
 
 /* ---------------------------------------
 --------------------------------------
 --------------------------------------
 -------------------------------------- */
 
-
 /* For Tablets Version or Landscape */
-@media screen and (min-width:768px) and (max-width:1024px) {
-	body{
-		min-height: 100vh;
-	}
-
-  #nav-head{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -20px;
-    vertical-align: baseline;
-    padding: 0.3em;
-    top:0;
-  }
-
-#main-content{
-    transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
-    padding: 2em;
-
-}
-#nav-head{
-  transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
-
-}
-
-.fa-book-open-reader{
-    font-size: 1.5em;
-    color: black;
-}
-/* For search bar */
-
-.search-input{
-    border-radius: 0.1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    width: 300px;
-    text-indent:25px;
-    border: 0.01em solid rgb(148, 148, 148);
-    border-radius: 1em;
-    font-size: 0.9em;
-}
-.search-input:focus{
-  outline: none;
-  border: none;
-  border-bottom: 0.1em solid rgb(148, 148, 148);
-  border-radius: 0;
-  background-color: white;
-}
-
-
-/* End of hover effect */
-.fa-search{
-  position: relative;
-  left: 28px;
-  top:1px;
-  color:#17171e;
-
-}
-
-/* end of search bar */
-
-
-
-
-/* For Left Menu Bar Drop Down */
-
-.sidebar {
-  height: 100%; 
-  width: 0;
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-  left: 0;
-  background-color: #17171e;
-  overflow-x: hidden;
-  padding-top: 60px; 
-  transition: 0.5s; 
-}
-
-.sidebar a {
-  padding: 25px 8px 8px 25px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #bababa;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.closebtn{
-  font-size: 1.5em;
-  cursor: pointer;
-  color: #bababa;
-  padding: 8px 0px;
-  border: none;
-}
-
-.closebtn:hover{
-  color: white;
-}
-.openbtn {
-  font-size: 1.5em;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  opacity: 0.6;
-}
-
-.fa-th-large, .fa-gear, .fa-comment-dots, .fa-chart-bar{
-  margin-right: 0.5em;
-}
-/* END OF SideNav  */
-
-/* For right hand side User Account Drop Down */
-
-.AccountButton:hover{
-  opacity: 0.6;
-}
-  .user-profile-dropdown {
-    float: left;
-    overflow: hidden;
-  }
-
-  .user-profile-dropdown .AccountButton {
-    cursor: pointer;
-    font-size: 1.3em;  
-    border: none;
-    text-decoration: none;
-    padding: 0.5em;
-    background-color: white;
-    font-size: 1.5em;
-    margin-right: 10px;
-  }
-
-  
-.DropAccount {
-    display: none;
-    z-index: 1;
-    right: 1px;
-    position: absolute;
-    min-width: 100px;
-    margin-right: 250px;
-    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-  }
-.DropAccount a {
-    color: black;
-    padding: 1em;
-    text-decoration: none;
-    display: block;
-    background-color: aliceblue;
-    position: relative;
-  }
-
-  .DropAccount a:hover, .DropContent a:hover {
-    color: white;
-    background-color: rgb(4, 59, 106);
-
-  }
-  .show {
-    display: block;
-  }
-
-  .showSetting {
-    display: block;
-  }
-
-/* END OF USER DROP DOWN  */
-
-
-
-/* Grettings */
-.greetingBox{
-    display: flex;
-    justify-content: center;
-    padding: 0 10px; 
-    margin-top: 2em;
-  }
-  
-  .greetingBox h1{
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg, #231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: textclip 15s linear infinite;
-    display: inline-block;
-    animation-iteration-count: 1
-    
-  }
-
-  @keyframes textclip {
-    to {
-      background-position: 200% center;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        min-height: 100vh;
     }
-  }
-  
 
-.avgFigure{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 3em;
-    border-radius: 0.3em;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
+    #navHead {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -20px;
+        vertical-align: baseline;
+        padding: 0.3em;
+        top: 0;
+    }
 
+    #mainContent {
+        transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+        padding: 2em;
+    }
+    #navHead {
+        transition: margin-left 0.5s ease-in-out; /* If you want a transition effect */
+    }
 
-.thisMonth,.prevMonth, .lastYear {
-    border: 0.1em solid black;
-    padding: 1em;
-    border: none;
-    border-radius: 1em;
-    width: 150px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-    cursor:default;
-    
-}
-.thisMonth:hover {
-  transform: scale(1.1); 
-}
-.thisMonth { transition: all .2s ease-in-out; }
+    .fa-book-open-reader {
+        font-size: 1.5em;
+        color: black;
+    }
+    /* For search bar */
 
-.prevMonth:hover {
-  transform: scale(1.1); 
-}
-.prevMonth { transition: all .2s ease-in-out; }
+    .search-input {
+        border-radius: 0.1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        width: 300px;
+        text-indent: 25px;
+        border: 0.01em solid rgb(148, 148, 148);
+        border-radius: 1em;
+        font-size: 0.9em;
+    }
+    .search-input:focus {
+        outline: none;
+        border: none;
+        border-bottom: 0.1em solid rgb(148, 148, 148);
+        border-radius: 0;
+        background-color: white;
+    }
 
-.lastYear:hover {
-  transform: scale(1.1); 
-}
-.lastYear { transition: all .2s ease-in-out; }
+    /* End of hover effect */
+    .fa-search {
+        position: relative;
+        left: 28px;
+        top: 1px;
+        color: #17171e;
+    }
 
-.thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
-  font-size: 2em;
-  font-family: 'Lobster', cursive;
-  font-weight: normal;
-  color: black;
+    /* end of search bar */
 
-}
+    /* For Left Menu Bar Drop Down */
 
-.thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue{
-  text-transform: uppercase;
-}
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #17171e;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
 
+    .sidebar a {
+        padding: 25px 8px 8px 25px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #bababa;
+        display: block;
+        transition: 0.3s;
+    }
 
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
 
-.thisMonth{
-  background-image: linear-gradient(#eecda3, #f086e0 );
-}
-.prevMonth{
-  background-image: linear-gradient(#e2f3d6 , #b3f795 );
-}
-.lastYear{
-  background-image: linear-gradient(#8cdde3, #739aed );
-}
+    .sidebar .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .closeBtn {
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #bababa;
+        padding: 8px 0px;
+        border: none;
+    }
 
+    .closeBtn:hover {
+        color: white;
+    }
+    .openBtn {
+        font-size: 1.5em;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+    }
 
+    .openBtn:hover {
+        opacity: 0.6;
+    }
 
-.thisMonthRevenue,.prevMonthRevenue, .lastYearRevenue {
-    text-align: center;
-}
+    .fa-th-large,
+    .fa-gear,
+    .fa-comment-dots,
+    .fa-chart-bar {
+        margin-right: 0.5em;
+    }
+    /* END OF SideNav  */
 
-.exclaimBox{
-    margin-top: 1.5em;
-    justify-content: center;
-    padding: 0 10px;
-    border: 0.1em solid black;
-    border: none;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    border-radius: 0.5em;
-  }
+    /* For right hand side User Account Drop Down */
 
-.thisMonthChart{
-    margin-top: 3em;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-    
-}
+    .accountButton:hover {
+        opacity: 0.6;
+    }
+    .userProfileDropdown {
+        float: left;
+        overflow: hidden;
+    }
 
+    .userProfileDropdown .accountButton {
+        cursor: pointer;
+        font-size: 1.3em;
+        border: none;
+        text-decoration: none;
+        padding: 0.5em;
+        background-color: white;
+        font-size: 1.5em;
+        margin-right: 10px;
+    }
 
-.oldChart{
-    margin-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
- 
+    .dropAccount {
+        display: none;
+        z-index: 1;
+        right: 1px;
+        position: absolute;
+        min-width: 100px;
+        margin-right: 250px;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+    .dropAccount a {
+        color: black;
+        padding: 1em;
+        text-decoration: none;
+        display: block;
+        background-color: aliceblue;
+        position: relative;
+    }
 
-}
+    .dropAccount a:hover,
+    .DropContent a:hover {
+        color: white;
+        background-color: rgb(4, 59, 106);
+    }
+    .show {
+        display: block;
+    }
 
-.prevChart{
-  margin-bottom: 1.5em;
-  box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-}
+    .showSetting {
+        display: block;
+    }
 
-.lastYearChart{
-  box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
-}
+    /* END OF USER DROP DOWN  */
 
-.tabularData{
-    margin-top: 1.5em;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
+    /* Grettings */
+    .greetingBox {
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+        margin-top: 2em;
+    }
 
-.tabularData p{
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 0.3em;
-}
+    .greetingBox h1 {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: textclip 15s linear infinite;
+        display: inline-block;
+        animation-iteration-count: 1;
+    }
 
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
 
-/* Chart Images Size */
-.thisMonthChart img{
-  width: 700px;
-  height: 500px;
-}
+    .avgFigure {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3em;
+        border-radius: 0.3em;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+            rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+            rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+            rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
 
-.oldChart img{
-  width: 640px;
-  height: 440px;
-}
+    .thisMonth,
+    .prevMonth,
+    .lastYear {
+        border: 0.1em solid black;
+        padding: 1em;
+        border: none;
+        border-radius: 1em;
+        width: 150px;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+        cursor: default;
+    }
+    .thisMonth:hover {
+        transform: scale(1.1);
+    }
+    .thisMonth {
+        transition: all 0.2s ease-in-out;
+    }
 
-.tabularData img{
-  width: 640px;
-  height: 400px;
-  border: 0.1em solid black;
-}
+    .prevMonth:hover {
+        transform: scale(1.1);
+    }
+    .prevMonth {
+        transition: all 0.2s ease-in-out;
+    }
 
-/* chart Image Size done */
+    .lastYear:hover {
+        transform: scale(1.1);
+    }
+    .lastYear {
+        transition: all 0.2s ease-in-out;
+    }
 
+    .thisMonthRevenue,
+    .prevMonthRevenue,
+    .lastYearRevenue {
+        font-size: 2em;
+        font-family: 'Lobster', cursive;
+        font-weight: normal;
+        color: black;
+    }
+
+    .thisMonthRevenue,
+    .prevMonthRevenue,
+    .lastYearRevenue {
+        text-transform: uppercase;
+    }
+
+    .thisMonth {
+        background-image: linear-gradient(#eecda3, #f086e0);
+    }
+    .prevMonth {
+        background-image: linear-gradient(#e2f3d6, #b3f795);
+    }
+    .lastYear {
+        background-image: linear-gradient(#8cdde3, #739aed);
+    }
+
+    .thisMonthRevenue,
+    .prevMonthRevenue,
+    .lastYearRevenue {
+        text-align: center;
+    }
+
+    .exclaimBox {
+        margin-top: 1.5em;
+        justify-content: center;
+        padding: 0 10px;
+        border: 0.1em solid black;
+        border: none;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        border-radius: 0.5em;
+    }
+
+    .thisMonthChart {
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+
+    .oldChart {
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .prevChart {
+        margin-bottom: 1.5em;
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+
+    .lastYearChart {
+        box-shadow: 0px 10px 18px 0px rgba(2, 2, 2, 0.3);
+    }
+
+    .tabularData {
+        margin-top: 1.5em;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .tabularData p {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 0.3em;
+    }
+
+    /* Chart Images Size */
+    .thisMonthChart img {
+        width: 700px;
+        height: 500px;
+    }
+
+    .oldChart img {
+        width: 640px;
+        height: 440px;
+    }
+
+    .tabularData img {
+        width: 640px;
+        height: 400px;
+        border: 0.1em solid black;
+    }
+
+    /* chart Image Size done */
 }

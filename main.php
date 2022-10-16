@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+    if(!$_SESSION['logged_in']){
+        $_SESSION['error'] = "You need to be logged in";
+        header("Location: index.php");
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

@@ -3,83 +3,130 @@
 <html lang="en">
     <!-- Header -->
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>  Sign In | Story </title>
-        <link rel="stylesheet" href="styles/masterLogin.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/170f096220.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign In | Story</title>
+        <link rel="stylesheet" href="styles/masterlogin.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet" />
+        <script
+            src="https://kit.fontawesome.com/170f096220.js"
+            crossorigin="anonymous"></script>
         <!-- INCLUDE FILES FOR NAV AND FOOTER HERE -->
     </head>
     <!-- Body elements -->
     <body>
-            <main>
-                <div class = "LoginNav">
-                    <div>
-                        <a href = "#"><i class = "fa-solid fa-book-open-reader"></i></a>
-                    </div>
-                    <div>
-                        <span class="underline-hover-effect"><a href = "Signup.html">Create Account</a></span>
-                    </div>
+        <main>
+            <div class="loginNav">
+                <div>
+                    <a href="main.html">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </a>
                 </div>
-                
-                <!-- Including the Navigation php for the un-signed user here -->
-                <div class = "loginform">
-                    <!-- Creating a Self-processing Form  -->
-                    <form id="loginpage" name="login" method="post">  
+                <div>
+                    <span class="underlineHoverEffect">
+                        <a href="signup.html">Create Account</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Including the Navigation php for the un-signed user here -->
+            <div class="loginForm">
+                <!-- Creating a Self-processing Form  -->
+                <form id="loginPage" name="login" method="post">
                     <h1>Sign In to Story</h1>
                     <!-- Display the error here using php If the username or password detailsEnter by the user doesn't match  -->
-                    <div class = "FormFill">   
-                        <div class = "detailsEnter">
+                    <div class="formFill">
+                        <div class="detailsEnter">
                             <!-- Taking Input of the email ID -->
                             <label for="email">EMAIL ADDRESS</label>
-                            <input type="text" id="email" name="email" size="40" placeholder="name@example.com" required>
+                            <input
+                                type="text"
+                                id="email"
+                                name="email"
+                                size="40"
+                                placeholder="name@example.com"
+                                required />
                             <!-- Taking Input of the Password -->
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" size="40" placeholder="Password" required>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                size="40"
+                                placeholder="Password"
+                                required />
                             <!-- The form Login button -->
                             <div>
-                                <button type="submit" name="submit" value="submit" class="submit">Sign In</button>
+                                <button
+                                    type="submit"
+                                    name="submit"
+                                    value="submit"
+                                    class="submit">
+                                    Sign In
+                                </button>
                             </div>
                         </div>
                         <!-- Making space between social links and Login form with Line -->
-                        <div class = "makingspace">
-                            <div class = "marginLine"></div>
+                        <div class="makingSpace">
+                            <div class="marginLine"></div>
                             <label class="marginOR">
                                 <span>OR</span>
                             </label>
-                            <div class ="marginLine"></div>
+                            <div class="marginLine"></div>
                         </div>
                         <!-- Social media Login links -->
-                        <div class = "SocialForm">
-                            <div class="SocialLogin">
+                        <div class="socialForm">
+                            <div class="socialLogin">
                                 <a href="#" class="Apple">
-                                    <img src = "images/appleicon.png" alt="Apple Icon"><span>Continue with Apple</span>
+                                    <img
+                                        src="images/appleicon.png"
+                                        alt="Apple Icon" /><span
+                                        >Continue with Apple</span
+                                    >
                                 </a>
                                 <a href="#" class="LinkedIn">
-                                    <img src = "images/linkedinicon.png" alt="Linked In Icon"><span>Continue with LinkedIn</span>
+                                    <img
+                                        src="images/linkedinicon.png"
+                                        alt="Linked In Icon" /><span
+                                        >Continue with LinkedIn</span
+                                    >
                                 </a>
                                 <a href="#" class="google">
-                                    <img src = "images/GoogleIcon.png" alt="Google Icon"><span>Continue with Google</span>
+                                    <img
+                                        src="images/googleicon.png"
+                                        alt="Google Icon" /><span
+                                        >Continue with Google</span
+                                    >
                                 </a>
                             </div>
                         </div>
                     </div>
-                        <!--Forgot password - if the user forgot about his pswd -->
-                        <div class = "LoginProblem">
-                            <span class="underline-hover-effect"><a href="ChangePassword.html">CAN'T LOG IN?</a></span>
-                        </div>
-                        <div class ="accountPolicy">
-                            <p>By creating an account or continuing to use a Story application, website, or software, 
-                                you acknowledge and agree that you have accepted the <a href ="TermsofService.html">Terms of Service</a> and have reviewed the <a href= "PrivacyPolicy.html"> Privacy Policy</a>.
-                            </p>
-                        </div> 
-                    </form>
-                    <!-- Form End -->
-                </div>
-            </main>
+                    <!--Forgot password - if the user forgot about his pswd -->
+                    <div class="loginProblem">
+                        <span class="underlineHoverEffect"
+                            ><a href="changepassword.html"
+                                >CAN'T LOG IN?</a
+                            ></span
+                        >
+                    </div>
+                    <div class="accountPolicy">
+                        <p>
+                            By creating an account or continuing to use a Story
+                            application, website, or software, you acknowledge
+                            and agree that you have accepted the
+                            <a href="termsofservice.html">Terms of Service</a>
+                            and have reviewed the
+                            <a href="privacypolicy.html"> Privacy Policy</a>.
+                        </p>
+                    </div>
+                </form>
+                <!-- Form End -->
+            </div>
+        </main>
         <!-- Include the footer here -->
     </body>
 </html>
